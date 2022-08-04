@@ -1,0 +1,97 @@
+#screenLoader{
+  position: absolute;
+  z-index: 300;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+#screenLoader img{
+  position: fixed;
+  content: url('../assets/images/screen-loader-folio-small.png');
+  width: 25vw;
+  height: auto;
+  /* top: 40%; */
+  left: 40vw;
+  /* left: 50%;
+  transform: translateX(-50%); */
+}
+
+#screenLoader span{
+  position: fixed;
+  margin-top: 4vh;
+  width: 0px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: white;
+  top: 70%;
+  left: 38vw;
+}
+
+#screenLoader div{
+  position: fixed;
+  margin-top: 4vh;
+  width: 25vw;
+  height: 9px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  top: 70%;
+  left: 38vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#screenLoader p{
+  position: fixed;
+  /* margin-top: 2vh; */
+  color: white;
+  top: 77%;
+  left: 38vw;
+  font-family: 'spaceranger';
+  font-size: 1.3em;
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 800px) {
+  /* #screenLoader img{
+    width: 40vw;
+    height: auto;
+    left: 30vw;
+  } */
+}
+
+@media only screen and (min-width: 800px) {
+  #screenLoader span{
+    top: 80%;
+  }
+
+  #screenLoader div{
+    top: 80%;
+  }
+
+  #screenLoader p{
+    top: 90%;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  #screenLoader img{
+    width: 15vw;
+    height: auto;
+    left: 43vw;
+  }
+}
+
+@media only screen and (min-height: 600px) {
+  #screenLoader img{
+    width: 25vw;
+    height: auto;
+  }
+}

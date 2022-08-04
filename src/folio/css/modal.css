@@ -1,0 +1,321 @@
+#modal {
+  position: fixed;
+  bottom: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  z-index:320;
+  width: 96vw;
+  height: 96vh;
+  max-width: 920px;
+  border-radius: 16px;
+}
+
+#modalHelperContainer{
+  position: relative;
+  margin-top: 4px;
+  margin-left: 4px;
+  float: left;
+  z-index: 420;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  /* color: white; */
+  /* font-size: 1.3em; */
+}
+
+#closeModal{
+  position: relative;
+  margin-top: 4px;
+  margin-right: 4px;
+  float: right;
+  z-index: 320;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.3em
+}
+
+#closeModal img{
+  content:url('../../../../../build/assets/images/cross_circle.png');
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+#opacScreen {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 310;
+  background-color: black;
+  opacity: 0.2;
+  visibility: hidden;
+  display: block;
+}
+
+#modalContainer {
+  position: relative;
+  width: 90%;
+  height: 95%;
+  z-index: 320;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#articleHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#articleTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  font-size: 2.2em;
+  font-weight: bold;
+  font-family: 'spaceranger';
+}
+
+.contactImg{
+  width: auto;
+  height: 30vh;
+  border-radius: 15vh;
+  cursor: pointer;
+  box-shadow: 10px 10px 5px rgba(10, 10, 10, 0.5);
+}
+/*
+#articleYearSummary{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75vh;
+} */
+
+#articleComponent1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  font-family: 'nasalization';
+  font-size: 1.5em;
+}
+
+#articleComponent2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  font-family: 'nasalization';
+  font-size: 1.5em;
+}
+
+#articleComponent3 {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  font-family: 'nasalization';
+  font-size: 1.5em;
+}
+
+#articleResponse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'nasalization';
+}
+
+#articleTel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+  margin-top: 3vh;
+  font-family: 'nasalization';
+  font-size: 1.5em;
+}
+
+#articleMail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+  font-family: 'nasalization';
+  font-size: 1.5em;
+}
+
+#articleComponent0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  font-family: 'nasalization';
+  font-size: 1.5em;
+}
+
+.fas fa-times-circle{
+  width: 25px;
+  height: 25px;
+}
+
+.prevContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.prevArticle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 70%;
+}
+
+.prevTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: 'Tequilla_Sunrise';
+  height: 20%;
+}
+
+.prevText{
+  height: 80%;
+}
+
+.prevImg{
+  width: 30%;
+}
+
+.prevImg img{
+  width: 80%;
+  height: auto;
+}
+
+@keyframes openModalAnim {
+  0%   {top: 15%;left: 15%;width:70%;height:70%}
+  100% {top: 10%;left: 10%;width:80%;height:80%}
+}
+
+@media only screen and (max-width: 780px) {
+  #modal{
+    /* width: 250px;
+    height: 240px; */
+  }
+  #modalContainer {
+    height: 95%;
+    overflow: scroll;
+  }
+  #articleHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #articleContainer {
+    font-size: 0.8em;
+  }
+  #note{
+    font-size: 0.7em;
+  }
+  .contactImg{
+    width: auto;
+    height: 16vh;
+    border-radius: 8vh;
+  }
+  #articleTel{
+    font-size: 1.2em;
+  }
+  #articleComponent0 {
+    height: 70vh;
+    font-size: 1.2em;
+  }
+  #articleText{
+    height: 55vh;
+  }
+}
+
+@media only screen and (max-height: 620px) {
+  #modal{
+    height:96vh;
+  }
+  #modalContainer {
+    overflow: scroll;
+  }
+  #articleHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #articleComponent0 {
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  .contactImg{
+    display: none;
+  }
+  #modal{
+    /* height: 80vh; */
+  }
+  #modalContainer {
+    overflow: scroll;
+    display: block;
+    height: 90%;
+  }
+  #articleHead{
+    height: 10%;
+  }
+}

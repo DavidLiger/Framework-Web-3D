@@ -1,0 +1,230 @@
+#title {
+  background-image: linear-gradient(to bottom right, rgba(100, 100, 100, 0.8), rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.9), rgba(90, 90, 90, 0.8));
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 110;
+  padding: 10px;
+  top:15px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: default;
+}
+
+#name {
+  font-size: 1.1em;
+  font-family: 'spaceranger';
+  letter-spacing: -1px;
+  background: linear-gradient(rgba(95, 135, 175, 1), rgba(205, 235, 255, 1), rgba(95, 135, 175, 1));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 1px #000;
+}
+
+#quality {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+  font-family: 'cynatar';
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  margin-left: 20px;
+  background: linear-gradient(rgba(205, 235, 255, 1), rgba(95, 135, 175, 1), rgba(205, 235, 255, 1), rgba(95, 135, 175, 1), rgba(205, 235, 255, 1), rgba(95, 135, 175, 1));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  /* -webkit-text-stroke: 1px #000; */
+  padding-bottom: 10px;
+}
+
+#pathBtn {
+  width: 64px;
+  height: 64px;
+  box-shadow: 10px 10px 5px rgba(10, 10, 10, 0.5);
+  border-radius: 32px;
+  border-style: none;
+  position: fixed;
+  top: 175px;
+  left: 5px;
+  z-index: 180;
+  color: white;
+  cursor: pointer;
+}
+
+#projectsBtn {
+  width: 64px;
+  height: 64px;
+  box-shadow: 10px 10px 5px rgba(10, 10, 10, 0.5);
+  border-radius: 32px;
+  border-style: none;
+  position: fixed;
+  top: 289px;
+  left: 5px;
+  z-index: 180;
+  color: white;
+  cursor: pointer;
+}
+
+#contactBtn {
+  width: 64px;
+  height: 64px;
+  box-shadow: 10px 10px 5px rgba(10, 10, 10, 0.5);
+  border-radius: 32px;
+  border-style: none;
+  position: fixed;
+  top: 403px;
+  left: 5px;
+  z-index: 180;
+  color: white;
+  cursor: pointer;
+}
+
+#pathBtn img {
+  width: 64px;
+  height: 64px;
+  content: url('../assets/images/parcours-icon.png');
+}
+
+#pathBtn span{
+  font-family: 'nasalization';
+  text-shadow: 2px 2px #000000;
+}
+
+#projectsBtn img {
+  width: 64px;
+  height: 64px;
+  content: url('../assets/images/projets-icon.png');
+}
+
+#projectsBtn span{
+  font-family: 'nasalization';
+  text-shadow: 2px 2px #000000;
+}
+
+#contactBtn img {
+  width: 64px;
+  height: 64px;
+  content: url('../assets/images/contact-icon.png');
+}
+
+#contactBtn span{
+  font-family: 'nasalization';
+  text-shadow: 2px 2px #000000;
+}
+
+
+#portfolio_1 {
+  position: fixed;
+  z-index: 110;
+}
+
+@media only screen and (min-width: 100px) and (min-height: 600px) {
+  #title{
+    font-size: 1.8em;
+    flex-direction: column;
+    letter-spacing: 2px;
+    transform: translateX(-50%);
+    padding-bottom: 10px;
+  }
+  #name {
+    font-size: 1.5em;
+    word-spacing: 3px;
+  }
+
+  #quality {
+    font-size: 1.3em;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #title{
+    flex-direction: row;
+    font-size: 2.6em;
+    transform: translateX(-50%);
+  }
+  #name {
+    word-spacing: 4px;
+  }
+
+  #quality {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-height: 600px) and (max-width: 900px){
+  #title{
+    font-size: 2.2em;
+  }
+}
+
+@media only screen and (max-height: 400px){
+  #pathBtn{
+    position: fixed;
+    top: auto;
+    bottom: 25px;
+    left: 20%;
+    transform: translateX(-50%);
+  }
+  #projectsBtn{
+    position: fixed;
+    top: auto;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #contactBtn{
+    position: fixed;
+    top: auto;
+    bottom: 25px;
+    left: 80%;
+    transform: translateX(-50%);
+  }
+}
+
+@media only screen and (min-height: 400px) and (max-height: 520px){
+  #pathBtn{
+    position: fixed;
+    top: 100px;
+    left: 5px;
+  }
+  #projectsBtn{
+    position: fixed;
+    top: 204px;
+    left: 5px;
+  }
+  #contactBtn{
+    position: fixed;
+    top: 308px;
+    left: 5px;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  #pathBtn{
+    position: fixed;
+    top: auto;
+    bottom: 25px;
+    left: 20%;
+    transform: translateX(-50%);
+  }
+  #projectsBtn{
+    position: fixed;
+    top: auto;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #contactBtn{
+    position: fixed;
+    top: auto;
+    bottom: 25px;
+    left: 80%;
+    transform: translateX(-50%);
+  }
+}
