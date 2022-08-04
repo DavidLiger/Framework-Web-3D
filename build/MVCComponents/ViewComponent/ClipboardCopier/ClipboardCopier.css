@@ -1,0 +1,14 @@
+#clipboard{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#clipboard img{
+  content: url('../../../../build/MVCComponents/ViewComponent/ClipboardCopier/images/clipboard-small.png');
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  margin-left: 20px;
+}

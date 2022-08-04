@@ -1,0 +1,66 @@
+#videoPlayerContainer{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 500;
+  visibility: hidden;
+}
+
+#videoPlayerOpacScreen {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  /* z-index: 490; */
+  background-color: black;
+  opacity: 0.8;
+  /* display: block; */
+}
+
+#videoLoadingMsg{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);7
+  font-family: 'nasalization';
+  font-size: 1.6em;
+  color: white;
+  z-index: 510;
+}
+
+#playerContainer{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#player{
+  position: fixed;
+  z-index: 510;
+}
+
+#closePlayer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 510;
+  width: 34px;
+  height: 34px;
+  border-radius: 17px;
+  border: none;
+  cursor: pointer;
+  color: grey;
+}
+
+#closePlayer img{
+  content:url('../../../../../build/assets/images/cross_circle.png');
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  cursor: pointer;
+}

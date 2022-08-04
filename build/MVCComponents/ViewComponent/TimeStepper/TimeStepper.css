@@ -1,0 +1,259 @@
+#timeStepperSlider {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 88%;
+}
+
+#timeStepperImg {
+  position: relative;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#timeStepperContent {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#timeStepperTitle {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#timeStepperText {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  font-family: arial;
+  font-size: 0.7em;
+  overflow-y: scroll;
+  color: #48484d;
+}
+
+#cursor {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#iconsContainer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+
+#timeLineStepperContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+#prevCursor {
+  position : fixed;
+  left: 15vw;
+}
+
+#nextCursor {
+  position : fixed;
+  right: 15vw;
+}
+
+#timeLineStepper {
+  position : fixed;
+  right: 14%;
+  min-width: 10px;
+  height: 10px;
+  background-color: #17a2db;
+  border-radius: 5px;
+  background-image: linear-gradient(rgba(34, 200, 224, 0.2), rgba(255, 255, 255, 0.5), rgba(34, 200, 224, 0.2), rgba(4, 150, 174, 1));
+}
+
+.yearIcon{
+  position : fixed;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 2px;
+  width: 72px;
+  height: 26px;
+  white-space:nowrap;
+  cursor: pointer;
+  font-family:'nasalization';
+  font-size: 0.9em;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.5);
+  z-index: 280;
+  color: black;
+}
+
+#firstYearLabel {
+  left: 14%;
+  transform: translateX(-50%);
+}
+
+#secundYearLabel {
+  left: 28%;
+  transform: translateX(-50%);
+}
+
+#thirstYearLabel {
+  left: 42%;
+  transform: translateX(-50%);
+}
+
+#fourfthYearLabel {
+  left: 56%;
+  transform: translateX(-50%);
+}
+
+#fifthYearLabel {
+  left: 70%;
+  transform: translateX(-50%);
+}
+#sixthYearLabel {
+  left: 84%;
+  transform: translateX(-50%);
+}
+
+#timeStepperProjects {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space:nowrap;
+}
+
+.projectBtn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  vertical-align:top;
+  padding: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px rgba(250, 250, 250, 1);
+  background-image: linear-gradient(rgba(175, 215, 255, 1), rgba(135, 175, 215, 1));
+  border-radius: 8px;
+  box-shadow: 5px 5px 3px rgba(10, 10, 10, 0.5);
+}
+
+.projectBtn img{
+  content: url('../../../../build/MVCComponents/ViewComponent/TimeStepper/images/floppy-disk-small.png');
+  width: 24px;
+  height: auto;
+}
+
+.projectBtn span{
+  display: flex;
+  justify-content: center;
+  font-family:'nasalization';
+  font-size: 1.1em;
+  margin-left: 7px;
+}
+
+#textNProjectsContainer{
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 620px) {
+  #timeStepperSlider {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+  }
+  #cursor{
+    height: 20%;
+  }
+  #timeStepperImg {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #timeStepperContent {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .yearIcon{
+    transform: rotate(-45deg) translateY(100%);
+  }
+  #timeStepperText{
+    width: 100%;
+    height: 80%;
+  }
+  #timeStepperProjects{
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  #timeLineStepperContainer{
+    height: 40%;
+  }
+  #iconsContainer{
+    padding-top: 15px;
+    height: 60%;
+  }
+}
+
+@media only screen and (max-height: 520px) and (min-width: 620px){
+  #timeStepperSlider{
+    height: 78%;
+  }
+  #timeStepperImg {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #timeStepperContent {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #cursor{
+    height: 30%;
+  }
+  #timeStepperProjects{
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  #timeLineStepper{
+    margin-top: 15px;
+  }
+}

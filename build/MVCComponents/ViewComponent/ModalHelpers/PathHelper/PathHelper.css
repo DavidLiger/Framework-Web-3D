@@ -1,0 +1,146 @@
+#pathHelp.left {
+  width: 56px;
+  height: 56px;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  box-shadow: 10px 10px 5px rgba(5, 5, 5, 0.5);
+  border-radius: 28px;
+  border-style: none;
+  opacity: 0.9;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  display: none;
+  z-index: 400;
+  /* color: white; */
+  box-shadow: 0 ;
+  /* cursor: default; */
+  visibility: hidden;
+}
+
+#pathHelp.right {
+  width: 56px;
+  height: 56px;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  box-shadow: 10px 10px 5px rgba(10, 10, 10, 0.5);
+  border-radius:28px;
+  border-style: none;
+  opacity: 0.9;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  display: none;
+  z-index: 400;
+  /* color: white; */
+  box-shadow: 0 ;
+  /* cursor: default; */
+  visibility: hidden;
+}
+
+#pathHelpBtnImg.left {
+  content:url('../../../../../build/assets/images/info-circle.png');
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  border-style: none;
+  position: fixed;
+  z-index: 550;
+  cursor: pointer;
+  top: 15px;
+  left:15px;
+}
+
+#pathHelpBtnImg.right {
+  content:url('../../../../../build/assets/images/info-circle.png');
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  border-style: none;
+  position: fixed;
+  z-index: 450;
+  cursor: pointer;
+  top: 15px;
+  right:15px;
+}
+
+#pathHelpInfo.left {
+  /* display: none; */
+  border: 3px solid black;
+  border-radius: 24px;
+  overflow: hidden;
+  z-index: 410;
+  position: fixed;
+  top: 6px;
+  left: 8px;
+  padding: 2px;
+  margin: 2px;
+  width: 286px;
+  height: 144px;
+  visibility: hidden;
+}
+
+#pathHelpInfo.right {
+  /* display: none; */
+  border: 3px solid black;
+  border-radius: 24px;
+  overflow: hidden;
+  z-index: 410;
+  position: fixed;
+  top: 6px;
+  right: 8px;
+  padding: 2px;
+  margin: 2px;
+  width: 286px;
+  height: 144px;
+  visibility: hidden;
+}
+
+#pathHelpInfoTitle.left{
+  position: fixed;
+  top: 22px;
+  left:16px;
+  font-size: 0.8em;
+  font-weight: bold;
+  cursor: default;
+}
+
+#pathHelpInfoTitle.right{
+  position: fixed;
+  top: 22px;
+  right:17px;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: default;
+}
+
+#pathInfoTxt{
+  margin-top: 38px;
+  margin-left: 15px;
+  font-size: 0.8em;
+  text-decoration: underline;
+  cursor: default
+}
+
+#pathHelpInfo p{
+  margin-left: 15px;
+  font-size: 0.8em;
+  cursor: default;
+}
+
+#hidePathHelperContainer {
+  display: flex;
+  align-items: center;
+  margin-left:40px;
+  margin-top: 5px;
+}
+
+#hidePathHelperContainer input{
+  cursor: pointer;
+  margin-left:15px;
+}
+
+#hidePathHelperContainer label{
+  cursor: pointer;
+  margin-left:15px;
+  font-weight: bold;
+  font-size: 0.8em;
+}

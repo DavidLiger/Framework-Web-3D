@@ -1,0 +1,57 @@
+#slideImg{
+  position: relative;
+  width: 100%;
+  z-index: 280;
+  /* display: none; */
+}
+
+#arrow_L{
+  /* width: 10%; */
+  position: absolute;
+  left:15px;
+  content: url('../../../../src/folio/assets/images/arrow_L.png');
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 300;
+  /* display: none; */
+}
+
+#arrow_R{
+  width: 10%;
+  position: absolute;
+  right:15px;
+  content: url('../../../../src/folio/assets/images/arrow_R.png');
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 300;
+  /* display: none; */
+}
+
+@media only screen and (max-width: 620px) {
+  #slideImg{
+    height: 100%;
+    width: auto;
+  }
+}
+
+@media only screen and (max-height: 520px) and (min-width: 620px){
+  #slideImg{
+    height: auto;
+    width: 100%;
+  }
+  #arrow_R{
+    right: 0px;
+  }
+  #arrow_L{
+    left: 0px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  #slideImg{
+    height: 100%;
+    width: auto;
+  }
+}

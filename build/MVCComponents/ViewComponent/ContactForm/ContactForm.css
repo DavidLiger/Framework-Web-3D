@@ -1,0 +1,230 @@
+#formContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 80%;
+  /* margin-left: 10%; */
+}
+
+#formContainer input, textarea{
+  position: relative;
+  width: 90%;
+  /* left: 5%; */
+  font-family: sans-serif;
+}
+
+#mailAdress{
+  margin-top: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+#nameInput{
+  font-size: 0.8em;
+}
+
+#nameInput::-webkit-input-placeholder { /* Edge */
+  font-family: 'nasalization';
+}
+#nameInput:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-family: 'nasalization';
+}
+#nameInput::placeholder {
+  font-family: 'nasalization';
+}
+
+#mailInput{
+  font-size: 0.8em;
+}
+
+#mailInput::-webkit-input-placeholder { /* Edge */
+  font-family: 'nasalization';
+}
+#mailInput:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-family: 'nasalization';
+}
+#mailInput::placeholder {
+  font-family: 'nasalization';
+}
+
+#messageInput{
+  height: 120px;
+  font-size: 0.8em;
+}
+
+#messageInput::-webkit-input-placeholder { /* Edge */
+  font-family: 'nasalization';
+}
+#messageInput:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-family: 'nasalization';
+}
+#messageInput::placeholder {
+  font-family: 'nasalization';
+}
+
+.warning{
+  color: red;
+  font-size: 0.5em;
+  height: 16px;
+  z-index: 250;
+  line-height: 0.9;
+  margin-top: 1px;
+}
+
+.g-recaptcha{
+  width: 36px;
+  height: auto;
+  box-shadow: 0 3px 9px black, inset 0 0 9px white;
+}
+
+#sendContainer{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 90%;
+  margin-top: 15px;
+}
+
+#captchaContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  float:right;
+}
+
+#sendMessageBtnContainer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+
+#sendMessageBtn{
+  position: relative;
+  width: 110px;
+  height: 40px;
+  color: white;
+  font-size: 0.9em;
+  content: "";
+  inset: 0;
+  border: 4px solid transparent;
+  border-radius: 16px;
+  background: linear-gradient(to bottom right, #235c98, #59d9f1);
+  background-clip: padding-box;
+  padding: 10px;
+  box-shadow: 0 3px 9px black, inset 0 0 9px white;
+  cursor: pointer;
+  font-family: 'nasalization';
+}
+
+#sendMessageBtn::after {
+    position: absolute;
+    top: -4px; bottom: -4px;
+    left: -4px; right: -4px;
+    background: linear-gradient(to top left, #235c98, #59d9f1);
+    content: '';
+    z-index: -1;
+    border-radius: 16px;
+}
+
+.refresh-captcha{
+  margin-left: 5px;
+}
+
+.refresh-captcha img{
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+#captcha{
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-height: 620px) {
+  #formContainer{
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+    height: 30vh;
+    width: 90%;
+    left: 10%;
+    padding-bottom: 20px;
+    background: linear-gradient(to bottom right, #b6bcbd, #ffffff);
+    border-radius: 8px;
+  }
+  #sendContainer{
+    flex-direction: column;
+    width: 100%;
+    height: 225px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+  }
+  #sendMessageBtn{
+    margin-bottom: 5px;
+  }
+  #warningCaptcha{
+    z-index: 300;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  #grecaptchaContainer{
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  #formContainer{
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    background: linear-gradient(to bottom right, #b6bcbd, #ffffff);
+    border-radius: 8px;
+    height: 55vh;
+  }
+  #nameInput{
+    margin-top: 3vh;
+  }
+  #sendContainer{
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 5px;
+  }
+  #sendMessageBtn{
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+    iframe[src*="google.com/recaptcha/"] {
+      transform:scale(0.77);
+      -webkit-transform:scale(0.77);
+      transform-origin:0 0;
+      -webkit-transform-origin:0 0;
+      margin-left: 12%;
+    }
+}
+
+@media (max-width: 380px) {
+    iframe[src*="google.com/recaptcha/"] {
+      transform:scale(0.5);
+      -webkit-transform:scale(0.5);
+      transform-origin:0 0;
+      -webkit-transform-origin:0 0;
+      margin-left: 25%;
+    }
+}

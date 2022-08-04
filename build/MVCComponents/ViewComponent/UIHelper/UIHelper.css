@@ -1,0 +1,256 @@
+#help.left {
+  width: 56px;
+  height: 56px;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  box-shadow: 10px 10px 5px rgba(10, 10, 10, 0.5);
+  border-radius: 28px;
+  border-style: none;
+  opacity: 0.8;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  display: none;
+  z-index: 200;
+  color: white;
+  box-shadow: 0 ;
+  /* cursor: default; */
+  visibility: hidden;
+}
+
+#help.right {
+  width: 56px;
+  height: 56px;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  box-shadow: 10px 10px 5px rgba(10, 10, 10, 0.5);
+  border-radius:28px;
+  border-style: none;
+  opacity: 0.8;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  display: none;
+  z-index: 200;
+  color: white;
+  box-shadow: 0 ;
+  /* cursor: default; */
+  visibility: hidden;
+}
+
+#helpBtnImg.left {
+  content:url('./images/info-circle.png');
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  border-style: none;
+  position: fixed;
+  z-index: 250;
+  cursor: pointer;
+  top: 15px;
+  left:15px;
+}
+
+#helpBtnImg.right {
+  content:url('./images/info-circle.png');
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  border-style: none;
+  position: fixed;
+  z-index: 250;
+  cursor: pointer;
+  top: 15px;
+  right:15px;
+}
+
+#helpInfo.left {
+  /* display: none; */
+  border: 3px solid black;
+  border-radius: 26px;
+  overflow: hidden;
+  z-index: 210;
+  position: fixed;
+  top: 6px;
+  left: 6px;
+  padding: 2px;
+  margin: 2px;
+  width: 286px;
+  height: 154px;
+  visibility: hidden;
+}
+
+#helpInfo.right {
+  /* display: none; */
+  border: 3px solid black;
+  border-radius: 24px;
+  overflow: hidden;
+  z-index: 210;
+  position: fixed;
+  top: 6px;
+  right: 6px;
+  padding: 2px;
+  margin: 2px;
+  width: 286px;
+  height: 154px;
+  visibility: hidden;
+}
+
+#helpInfoTitle.left{
+  position: fixed;
+  top: 22px;
+  left:16px;
+  font-size: 0.8em;
+  font-weight: bold;
+  cursor: default;
+}
+
+#helpInfoTitle.right{
+  position: fixed;
+  top: 22px;
+  right:17px;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: default;
+}
+
+#helpInfoTxt{
+  margin-top: 38px;
+  margin-left: 15px;
+  font-size: 0.8em;
+  cursor: default
+}
+
+#helpInfo p{
+  margin-left: 15px;
+  font-size: 0.8em;
+  cursor: default;
+}
+
+#hideUIHelperContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  /* margin-left:40px;
+  margin-top: 10px; */
+}
+
+#hideUIHelperContainer input{
+  cursor: pointer;
+  margin-right:5px;
+}
+
+#hideUIHelperContainer label{
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+#mouseLMBImg.left {
+  content:url('./images/computer-mouse-lmb.png');
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  border-style: none;
+  position: fixed;
+  top: 15px;
+  left:84px;
+}
+
+#mouseLMBImg.right {
+  content:url('./images/computer-mouse-lmb.png');
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  border-style: none;
+  position: fixed;
+  top: 15px;
+  right:87px;
+}
+
+#mouseMMBImg.left {
+  content:url('./images/computer-mouse-mmb.png');
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  border-style: none;
+  position: fixed;
+  top: 15px;
+  left:202px;
+}
+
+#mouseMMBImg.right {
+  content:url('./images/computer-mouse-mmb.png');
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  border-style: none;
+  position: fixed;
+  top: 15px;
+  right:202px;
+}
+
+#move.left{
+  width: 80px;
+  height: 62px;
+  position: fixed;
+  top: 22px;
+  left:20px;
+  font-size: 1.4em;
+  cursor: default;
+}
+
+#move.right{
+  width: 70px;
+  height: 62px;
+  position: fixed;
+  top: 22px;
+  right:17px;
+  font-size: 1.4em;
+  cursor: default;
+}
+
+#zoom.left{
+  width: 80px;
+  height: 62px;
+  position: fixed;
+  top: 22px;
+  left:132px;
+  font-size: 1.4em;
+  cursor: default;
+}
+
+#zoom.right{
+  width: 80px;
+  height: 62px;
+  position: fixed;
+  top: 22px;
+  right:120px;
+  font-size: 1.4em;
+  cursor: default;
+}
+
+#move.toxTypeWriter{
+  top: 15px;
+  font-family:'toxTypeWriter';
+  font-size: 1.8em;
+}
+
+#zoom.toxTypeWriter{
+  top: 15px;
+  font-family:'toxTypeWriter';
+  font-size: 1.8em;
+}
+
+#move.jackInTheBox{
+  top: 20px;
+  font-family:'Jack_in_the_Box';
+  font-size: 1.2em;
+}
+
+#zoom.jackInTheBox{
+  top: 20px;
+  font-family:'Jack_in_the_Box';
+  font-size: 1.2em;
+}
