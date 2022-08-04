@@ -9,10 +9,10 @@ The best way to understand is by example. This repository is a clone of my perso
 In the folder /src/folio/assets/glb you will find a file package.json. It contains the settings for the scene. The scene representing two people in a flying car around the Earth is open source, you can use it as you like. 
 
 # Settings
-"sceneURI" : target the location of the glb file
-"sceneContainer" : targets the element that will contain the 3D scene
-"backgroundURI" : validates or not the use of a background image and gives its location
-"camera" : sets the various parameters and the position of the camera
+- "sceneURI" : target the location of the glb file
+- "sceneContainer" : targets the element that will contain the 3D scene
+- "backgroundURI" : validates or not the use of a background image and gives its location
+- "camera" : sets the various parameters and the position of the camera
 "rotation" : sets the scene rotation
 "autoRotation" : triggers a continuous rotation of the stage and sets its speed
 "UIHelper" : opens a window that lets users know how to manipulate the 3D scene see /build/MVCCompenents/ViewComponent/UIHelper
