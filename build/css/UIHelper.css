@@ -1,0 +1,85 @@
+#help {
+  width: 56px;
+  height: 56px;
+  border-radius: 0px 28px 28px 0px;
+  border-style: none;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 00;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 ;
+  visibility: hidden;
+}
+
+#helpBtnImg {
+  content:url('../assets/images/info-circle.png');
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  border-style: none;
+  position: fixed;
+  top: 10px;
+  left:8px;
+}
+
+#helpInfo {
+  /* display: none; */
+  border: 3px solid black;
+  border-radius: 24px;
+  overflow: hidden;
+  z-index: 30;
+  position: fixed;
+  top: 1px;
+  left: 8px;
+  padding: 2px;
+  margin: 2px;
+  width: 230px;
+  height: 40px;
+  visibility: hidden;
+}
+
+#mouseLMBImg {
+  content:url('../assets/images/computer-mouse-lmb.png');
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  border-style: none;
+  position: fixed;
+  top: 10px;
+  left:84px;
+}
+
+#mouseMMBImg {
+  content:url('../assets/images/computer-mouse-mmb.png');
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  border-style: none;
+  position: fixed;
+  top: 10px;
+  left:202px;
+}
+
+#move{
+  width: 80px;
+  height: 62px;
+  position: fixed;
+  top: 17px;
+  left:20px;
+  font-family:'spaceranger';
+  font-size: 1.4em;
+}
+
+#zoom{
+  width: 80px;
+  height: 62px;
+  position: fixed;
+  top: 17px;
+  left:138px;
+  font-family:'spaceranger';
+  font-size: 1.4em;
+}
